@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Fruktur&family=Indie+Flower&family=Love+Light&family=Zen+Antique+Soft&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Amatic+SC&family=Fruktur&family=Indie+Flower&family=Love+Light&family=Secular+One&family=Zen+Antique+Soft&display=swap');
+.JokeList{
+    /* border:.2rem solid red; */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.JokeList-left{
+    height: 100%;
+    /* border:.2rem solid yellow; */
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:#6600ff;
+    box-shadow:0rem 1rem 1rem black;
+    z-index:1;
+}
+.JokeList-right{
+    height: 90%;
+    /* border:.2rem solid green; */
+    width:75%;
+    margin:auto 0rem;
+    overflow-y: scroll;
+    box-shadow:0rem 1rem 1rem black;
+}
+
+.JokeList-right::-webkit-scrollbar{
+  width:0rem;
+}
+.JokeList-span{
+    font-weight: bolder;
+    font-size:4rem;
+    color:white;
+    font-family: 'Alfa Slab One', cursive;
+}
+
+.JokeList-p{
+    font-size:3rem;
+    color:white;
+    font-family: 'Amatic SC', cursive;
+    margin-top:10rem;
+    letter-spacing:.5rem;
+}
+
+.JokeList-emojiDiv{
+    border-radius: 50%;
+    box-shadow: 0rem 2rem 1rem rgba(0, 0, 0, 0.726);
+    font-size:12rem;
+    border:.1rem solid #6600ff;
+    cursor:pointer;
+}
+.JokeList-emojiDiv:hover{
+    animation:  shake 0.2s  ;
+}
+@keyframes shake{
+    0%{
+      transform: translateX(0)
+    }
+    20%{
+      transform: translateY(25px);
+    }
+    40%{
+      transform: translateX(-25px);
+    }
+    
+    60%{
+      transform: translateY(-25px);
+    }
+    80%{
+      transform: translateX(25px);
+    }
+    100%{
+      transform: translateY(0px);
+    }
+  }
+
+.JokeList-btn{
+    margin-top:3rem;
+    width:50%;
+    height:10%;
+    border-radius:2rem;
+    color:white;
+    background: -webkit-linear-gradient(top left, #8E4EB1, #02FADA);
+  background: -moz-linear-gradient(top left, #8E4EB1, #02FADA);
+  background: linear-gradient(to bottom right, #8E4EB1, #02FADA);
+}
+.JokeList-btn:hover{
+    background: #751494;
+background: -webkit-linear-gradient(bottom right, #751494, #6CE1EE);
+background: -moz-linear-gradient(bottom right, #751494, #6CE1EE);
+background: linear-gradient(to top left, #751494, #6CE1EE);
+}
+
+.JokeList-loading{
+  font-size:4rem;
+}
+.Loader{
+  text-align:center;
+}

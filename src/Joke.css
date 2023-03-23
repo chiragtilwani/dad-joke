@@ -1,0 +1,43 @@
+.Joke{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border:.1rem solid rgba(128, 128, 128, 0.562);
+    background-color:whitesmoke
+}
+
+.Joke-likeSection{
+ margin:auto .5rem auto .5rem;
+}
+
+.Joke-btn{
+    cursor:pointer;
+    text-shadow: 0rem 0rem 1rem black;;
+    background: none;
+    border: none;
+    outline: none;
+    font-size:2rem;
+}
+
+.Joke-textDiv{
+    width:70%;
+    font-size:1.8rem;
+    font-weight:400;
+}
+.Joke-text{
+    float:left;
+}
+
+.Joke-mood{
+    font-size:4rem;
+    text-shadow: 0rem 0rem 1rem black;
+}
+
+.Joke-likes{
+    font-size:1.8rem;
+    border:.3rem solid;
+    border-radius:50%;
+    display: inline-block;
+    width:3rem;
+    height:3rem;
+}
